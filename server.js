@@ -35,13 +35,3 @@ app.get("/employees", async (req, res) => {
   });
 })();
 
-const myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("foo");
-  }, 300);
-  reject("oops");
-});
-
-myPromise.then(() => {
-  console.log("hello");
-});
